@@ -1,0 +1,135 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #333333;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 5px;
+}
+nav .container .logo {
+  width: 5%;
+}
+nav .container .logo img {
+  width: 100%;
+}
+  nav .icon{
+    border: none;
+  }
+nav .container .links ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+nav .container .links ul li:not(:last-child) {
+  margin-right: 25px;
+}
+nav .container .links ul li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--mainColor);
+  position: relative;
+  width: 0%;
+  left: 50%;
+  top: 5px;
+  transition-duration: 0.5s;
+}
+  nav .container .links ul li a {
+    color: white;
+    text-decoration: none;
+  }
+nav .container .links ul li.activ a {
+  color: var(--mainColor);
+}
+nav .container .links ul li.activ:after {
+  width: 100%;
+  left: 0%;
+}
+nav .container .links ul li:hover::after {
+  width: 100%;
+  left: 0%;
+}
+nav .container .links ul li:hover a {
+  color: var(--mainColor);
+}
+
+
+header {
+  background-image: url("../images/slider-01-cd8154e4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 1;
+}
+header .content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+header .content h3 {
+  font-size: clamp(1.5rem, 2vw, 5rem);
+}
+header .content h1 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  color: var(--mainColor);
+  margin-block: 20px;
+}
+header .content p {
+  font-size: clamp(1rem, 1.5vw, 3rem);
+}
+header .content p::after {
+  content: "";
+  animation-name: animat_1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+header a {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  border-radius: 20px;
+  border: 2px solid var(--mainColor);
+  left: 50%;
+  bottom: 10%;
+  z-index: 2;
+  transform: translatex(-50%);
+  overflow: hidden;
+}
+header a.shap::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--mainColor);
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  animation-name: animat_2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

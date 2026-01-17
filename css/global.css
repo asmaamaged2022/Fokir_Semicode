@@ -1,0 +1,33 @@
+:root {
+  --mainColor: #ff305b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--mainColor);
+}
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0, 0.5);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 1000px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Exo 2", sans-serif;
+}

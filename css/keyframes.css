@@ -1,0 +1,49 @@
+@keyframes animat_1 {
+  0% {
+    content: " |";
+  }
+  10% {
+    content: " D |";
+  }
+  20% {
+    content: " De |";
+  }
+  30% {
+    content: " Des |";
+  }
+  40% {
+    content: " Desi |";
+  }
+  50% {
+    content: " Desig |";
+  }
+  60% {
+    content: " Design |";
+  }
+  70% {
+    content: " Designe |";
+  }
+  80% {
+    content: " Designer |";
+  }
+  90% {
+    content: " Designer |";
+  }
+  100% {
+    content: " Designer |";
+  }
+}
+@keyframes animat_2 {
+  0% {
+    opacity: 1;
+    top: -20%;
+  }
+  50% {
+    opacity: 1;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 50%;
+  }
+}

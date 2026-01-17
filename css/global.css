@@ -23,7 +23,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--bg);
-  /* height: 2000px; */
 }
 p {
   color: var(--p);

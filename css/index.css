@@ -96,6 +96,7 @@ header .content h1 {
 }
 header .content p {
   font-size: clamp(1rem, 1.5vw, 3rem);
+  color: white;
 }
 header .content p::after {
   content: "";
@@ -489,17 +490,24 @@ header a.shape::after {
   border-radius: 10px;
   background-color: transparent;
   height: 40px;
+  outline: none;
+  color: white;
 }
 #Contact_Us .container form textarea {
   resize: none;
   height: 150px;
 }
-::placeholder{
+::placeholder {
   color: white;
 }
-#Contact_Us .container form button{
-color: var(--mainColor);
-padding: 10px;
+#Contact_Us .container form button {
+  color: var(--mainColor);
+  padding: 10px;
+  transition-duration: .5s;
+}
+#Contact_Us .container form button:hover{
+  background-color: var(--mainColor);
+  color: white;
 }
 
 /* --------------------------footer--------------------- */

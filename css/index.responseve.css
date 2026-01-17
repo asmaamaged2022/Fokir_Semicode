@@ -1,5 +1,4 @@
 @media (max-width: 1300px) {
-
   .container {
     width: 90%;
   }
@@ -55,11 +54,12 @@
   nav .links ul li:not(:last-child) {
     margin-bottom: 20px;
   }
-  nav .links:focus-within ul,
-  nav .icon:focus + .links ul {
+  nav .icon:focus + .links ul,
+  nav .links:focus-within ul {
     height: 260px;
     padding: 20px;
   }
+
   /* ------------------------------About--------------------- */
   #About .container .part1,
   #About .container .part2 {
@@ -93,19 +93,19 @@
     width: 100%;
   }
   /* --------------------------Contact Us--------------------- */
-#Contact_Us .container form{
-  width: 90%;
-}
-#Contact_Us .container form .box > * {
-  width: 100%;
-}
-#Contact_Us .container form .box .name input {
-  width: 100%;
-  margin-bottom: 30px;
-}
-#Contact_Us .container form button{
-  width: 100%;
-}
+  #Contact_Us .container form {
+    width: 90%;
+  }
+  #Contact_Us .container form .box > * {
+    width: 100%;
+  }
+  #Contact_Us .container form .box .name input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #Contact_Us .container form button {
+    width: 100%;
+  }
 }
 
 @media (min-width: 371px) and (max-width: 1300px) {
@@ -132,10 +132,10 @@
   #Blog .container .card {
     width: 90%;
   }
-    /* --------------------------Contact Us--------------------- */
-#Contact_Us .container form{
-  width: 80%;
-}
+  /* --------------------------Contact Us--------------------- */
+  #Contact_Us .container form {
+    width: 80%;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 1300px) {
@@ -179,10 +179,10 @@
   #Blog .container .card .item {
     width: 95%;
   }
-    /* --------------------------Contact Us--------------------- */
-#Contact_Us .container form{
-  width: 50%;
-}
+  /* --------------------------Contact Us--------------------- */
+  #Contact_Us .container form {
+    width: 50%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
@@ -222,21 +222,19 @@
   #Blog .container .card .item {
     width: 80%;
   }
-    /* --------------------------Contact Us--------------------- */
-#Contact_Us .container form{
-  width: 70%;
-}
-#Contact_Us .container form .box{
-  margin-bottom: 0;
-}
-#Contact_Us .container form .box > * {
-  width: 50%;
-}
-#Contact_Us .container form .box .name input {
-  width: 95%;
-  
-}
-
+  /* --------------------------Contact Us--------------------- */
+  #Contact_Us .container form {
+    width: 70%;
+  }
+  #Contact_Us .container form .box {
+    margin-bottom: 0;
+  }
+  #Contact_Us .container form .box > * {
+    width: 50%;
+  }
+  #Contact_Us .container form .box .name input {
+    width: 95%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
@@ -285,7 +283,7 @@
 }
 
 @media (min-width: 1181px) and (max-width: 1300px) {
-    /* --------------------------Blog--------------------- */
+  /* --------------------------Blog--------------------- */
 
   #Blog .container .card .item {
     width: 75%;

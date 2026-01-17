@@ -1,3 +1,4 @@
+/* -------------------------------nav bar--------------------- */
 nav {
   position: fixed;
   top: 0;
@@ -18,9 +19,9 @@ nav .container .logo {
 nav .container .logo img {
   width: 100%;
 }
-  nav .icon{
-    border: none;
-  }
+nav .icon {
+  border: none;
+}
 nav .container .links ul {
   display: flex;
   align-items: center;
@@ -40,14 +41,14 @@ nav .container .links ul li::after {
   top: 5px;
   transition-duration: 0.5s;
 }
-  nav .container .links ul li a {
-    color: white;
-    text-decoration: none;
-  }
-nav .container .links ul li.activ a {
+nav .container .links ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav .container .links ul li.active a {
   color: var(--mainColor);
 }
-nav .container .links ul li.activ:after {
+nav .container .links ul li.active:after {
   width: 100%;
   left: 0%;
 }
@@ -59,7 +60,7 @@ nav .container .links ul li:hover a {
   color: var(--mainColor);
 }
 
-
+/* -------------------------------Header--------------------- */
 header {
   background-image: url("../images/slider-01-cd8154e4.jpg");
   background-position: center;
@@ -117,7 +118,7 @@ header a {
   transform: translatex(-50%);
   overflow: hidden;
 }
-header a.shap::after {
+header a.shape::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -132,4 +133,383 @@ header a.shap::after {
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+/* --------------------------About--------------------- */
+#About .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 60px;
+}
+#About .container .part1 {
+  width: 50%;
+}
+#About .container .part1 .frame {
+  width: 60%;
+  border: 5px solid var(--mainColor);
+  position: relative;
+  border-radius: 10px;
+  margin: auto;
+}
+#About .container .part1 .frame .content {
+  transform: translate(15px, 20px);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#About .container .part1 .frame .content img {
+  display: block;
+  height: 100%;
+}
+#About .container .part1 .cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition-duration: 1s;
+}
+#About .container .part1 .frame .content:hover .cover {
+  top: 0%;
+}
+#About .container .part1 .cover ul {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#About .container .part1 .cover ul li:not(:last-child) {
+  margin-right: 20px;
+}
+#About .container .part1 .cover ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translatey(-20px);
+  opacity: 0;
+}
+#About .container .part1 .frame .content:hover .cover ul :first-child {
+  transition-delay: 1s;
+}
+#About .container .part1 .frame .content:hover .cover ul :nth-of-type(2) {
+  transition-delay: 1.3s;
+}
+#About .container .part1 .frame .content:hover .cover ul :nth-of-type(3) {
+  transition-delay: 1.6s;
+}
+#About .container .part1 .frame .content:hover .cover ul :nth-of-type(4) {
+  transition-delay: 1.9s;
+}
+#About .container .part1 .frame .content:hover .cover ul li {
+  opacity: 1;
+  transform: translatey(0px);
+  transition-duration: 1s;
+}
+#About .container .part1 .cover ul a {
+  font-size: 20px;
+}
+#About .container .part1 .cover ul :first-child a i {
+  color: #1877f2;
+}
+#About .container .part1 .cover ul :nth-of-type(2) a i {
+  color: #e4405f;
+}
+#About .container .part1 .cover ul :nth-of-type(3) a i {
+  color: #1da1f2;
+}
+#About .container .part1 .cover ul :nth-of-type(4) a i {
+  color: #000;
+}
+
+#About .container .part2 {
+  width: 50%;
+}
+#About .container .part2 > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+#About .container .part2 h2 {
+  padding-inline: 10px;
+  border-left: 5px solid var(--mainColor);
+  font-size: 30px;
+}
+#About .container .part2 p {
+  line-height: 2;
+}
+#About .container .part2 hr {
+  border: 0.5px dashed white;
+}
+#About .container .part2 .info {
+  display: flex;
+  flex-wrap: wrap;
+}
+#About .container .part2 .info .text {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+#About .container .part2 .info .text p {
+  margin-left: 5px;
+}
+#About .container .part2 .info .text h5 {
+  font-size: 15px;
+}
+#About .container .part2 .btn button {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--mainColor);
+  padding: 15px;
+  color: var(--mainColor);
+  margin-right: 10px;
+  transition-duration: 1s;
+}
+#About .container .part2 .btn button:hover {
+  color: white;
+  background-color: var(--mainColor);
+}
+
+/* --------------------------services--------------------- */
+
+#Services .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#Services .container .card {
+  width: 25%;
+  margin-block: 50px;
+}
+#Services .container .card .item {
+  border: 1px solid var(--mainColor);
+  border-radius: 10px;
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  padding: 20px;
+  transition-duration: 0.5s;
+}
+#Services .container .card .item:hover {
+  transform: translatey(-10px);
+  box-shadow:
+    rgba(255, 48, 91, 0.4) 0px 5px,
+    rgba(255, 48, 91, 0.3) 0px 10px,
+    rgba(255, 48, 91, 0.2) 0px 15px,
+    rgba(255, 48, 91, 0.1) 0px 20px,
+    rgba(255, 48, 91, 0.05) 0px 25px;
+}
+#Services .container .card .item i {
+  font-size: 30px;
+  color: var(--mainColor);
+}
+#Services .container .card .item h5 {
+  margin-block: 10px;
+  font-size: 17px;
+}
+#Services .container .card .item p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+/* --------------------------Portfolio--------------------- */
+#Portfolio .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#Portfolio .container .card {
+  width: calc(100% / 3);
+  margin: 20px auto;
+}
+#Portfolio .container .card .item {
+  width: 95%;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#Portfolio .container .card .item img {
+  display: block;
+  height: 100%;
+}
+#Portfolio .container .card .item .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#Portfolio .container .card .item .content p {
+  position: absolute;
+  top: 10%;
+  left: 100%;
+  width: 100%;
+  background-color: var(--mainColor);
+  color: white;
+  text-align: center;
+  padding-block: 10px;
+}
+#Portfolio .container .card .item:hover .content p {
+  transition-duration: 1s;
+  transition-delay: 1s;
+  left: 0%;
+}
+
+#Portfolio .container .card .item .content a {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--mainColor);
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+#Portfolio .container .card .item:hover .content a {
+  transition-duration: 1s;
+  transition-delay: 1s;
+  bottom: 10%;
+}
+#Portfolio .container .card .item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0%;
+  height: 0%;
+  background-color: rgba(255, 48, 91, 0.3);
+  border-radius: 50px;
+  transition-duration: 1s;
+}
+#Portfolio .container .card .item:hover:before {
+  width: 110%;
+  height: 110%;
+}
+/* --------------------------Blog--------------------- */
+#Blog .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#Blog .container .card {
+  width: calc(100% / 3);
+  margin: 20px auto;
+}
+#Blog .container .card .item {
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--mainColor);
+}
+#Blog .container .card .item .image {
+  height: 200px;
+}
+#Blog .container .card .item .image img,
+#Blog .container .card .item .image iframe {
+  width: 100%;
+  height: 100%;
+}
+#Blog .container .card .item .content {
+  padding: 20px;
+}
+#Blog .container .card .item .content > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+#Blog .container .card .item .content h5 {
+  font-size: 15px;
+}
+#Blog .container .card .item .content h3 {
+  font-size: 20px;
+}
+#Blog .container .card .item .content p {
+  line-height: 1.5;
+}
+#Blog .container .card .item .content button {
+  border: 1px solid var(--mainColor);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--mainColor);
+  padding: 10px;
+  transition-duration: 1s;
+}
+#Blog .container .card .item .content button:hover {
+  color: white;
+  background-color: var(--mainColor);
+}
+#Blog .container .card .item .content button i {
+  transition-duration: 1s;
+}
+#Blog .container .card .item .content button:hover i {
+  margin-left: 5px;
+}
+/* --------------------------Contact Us--------------------- */
+#Contact_Us .container {
+  margin-block: 50px;
+}
+#Contact_Us .container form {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#Contact_Us .container form > *:not(:last-child) {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#Contact_Us .container form .box {
+  display: flex;
+  flex-wrap: wrap;
+}
+#Contact_Us .container form .box > * {
+  width: 50%;
+}
+#Contact_Us .container form .box .name input {
+  width: 95%;
+}
+#Contact_Us .container form .box .email input {
+  width: 100%;
+}
+#Contact_Us .container form button,
+#Contact_Us .container form textarea,
+#Contact_Us .container form input {
+  padding: 10px;
+  border: none;
+  border: 1px solid var(--mainColor);
+  border-radius: 10px;
+  background-color: transparent;
+  height: 40px;
+}
+#Contact_Us .container form textarea {
+  resize: none;
+  height: 150px;
+}
+::placeholder{
+  color: white;
+}
+#Contact_Us .container form button{
+color: var(--mainColor);
+padding: 10px;
+}
+
+/* --------------------------footer--------------------- */
+footer {
+  width: 100%;
+  background-color: #333333;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+}
+footer p {
+  color: white;
 }

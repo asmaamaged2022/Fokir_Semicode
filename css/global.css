@@ -1,5 +1,7 @@
 :root {
-  --mainColor: #ff305b;
+  --mainColor: rgb(255, 48, 91);
+  --bg: #151515;
+  --p: #c1c1c1;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--mainColor);
@@ -8,20 +10,57 @@
   width: 11px;
 }
 ::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0, 0.5);
+  background: rgba(114, 114, 114, 0.5);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
-  height: 1000px;
+  background-color: var(--bg);
+  /* height: 2000px; */
 }
+p {
+  color: var(--p);
+}
+.title {
+  color: white;
+  text-align: center;
+  width: fit-content;
+  margin: 10px auto;
+}
+.title h2 {
+  margin: 50px 0 20px;
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+}
+.title .lines {
+  width: 90%;
+}
+.title .lines span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 1px;
+  background-color: var(--mainColor);
+  margin-top: 5px;
+}
+.title .lines :not(:nth-of-type(2)) {
+  width: 60%;
+  margin-inline: auto;
+}
+
 .container {
   width: 80%;
   margin: auto;
+  color: white;
+}
+img {
+  width: 100%;
 }
 h1,
 h2,

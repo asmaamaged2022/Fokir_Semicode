@@ -1,7 +1,9 @@
 @media (max-width: 1300px) {
-}
 
-@media (min-width: 320px) and (max-width: 1300px) {
+  .container {
+    width: 90%;
+  }
+  /* -------------------------------nav bar--------------------- */
   nav .container {
     width: 90%;
     position: relative;
@@ -35,16 +37,17 @@
     width: 100%;
     background-color: #333;
     border-radius: 10px;
-    height: 0px;
-    overflow: hidden;
-    transition-duration: 1s;
   }
   nav .links ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
+
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition-duration: 1s;
   }
   nav .container .links ul li:not(:last-child) {
     margin-right: 0;
@@ -52,25 +55,192 @@
   nav .links ul li:not(:last-child) {
     margin-bottom: 20px;
   }
-
-  nav .icon:focus + .links {
+  nav .links:focus-within ul,
+  nav .icon:focus + .links ul {
     height: 260px;
+    padding: 20px;
   }
+  /* ------------------------------About--------------------- */
+  #About .container .part1,
+  #About .container .part2 {
+    width: 100%;
+  }
+  #About .container .part1 {
+    margin-bottom: 40px;
+  }
+  #About .container .part1 .frame {
+    width: 90%;
+  }
+  #About .container .part2 .info .text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #About .container .part2 .info .text h5 {
+    font-size: 15px;
+  }
+  /* -----------------------------Services--------------------- */
+  #Services .container .card {
+    width: 100%;
+    margin-block: 20px;
+  }
+  /* --------------------------Portfolio--------------------- */
+  #Portfolio .container .card {
+    width: 100%;
+    margin-block: 20px;
+  }
+  /* --------------------------Blog--------------------- */
+  #Blog .container .card {
+    width: 100%;
+  }
+  /* --------------------------Contact Us--------------------- */
+#Contact_Us .container form{
+  width: 90%;
+}
+#Contact_Us .container form .box > * {
+  width: 100%;
+}
+#Contact_Us .container form .box .name input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#Contact_Us .container form button{
+  width: 100%;
+}
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+  /* ------------------------------About--------------------- */
+  #About .container .part1 .frame {
+    width: 70%;
+  }
+  #About .container .part2 .info .text {
+    width: 50%;
+  }
+  #About .container .part2 .info .text p,
+  #About .container .part2 .info .text h5 {
+    font-size: 13px;
+  }
+  /* -----------------------------Services--------------------- */
+  #Services .container .card .item {
+    width: 70%;
+  }
+  /* --------------------------Portfolio--------------------- */
+  #Portfolio .container .card {
+    width: 80%;
+  }
+  /* --------------------------Blog--------------------- */
+  #Blog .container .card {
+    width: 90%;
+  }
+    /* --------------------------Contact Us--------------------- */
+#Contact_Us .container form{
+  width: 80%;
+}
 }
 
 @media (min-width: 577px) and (max-width: 1300px) {
+  /* -------------------------------nav bar--------------------- */
   nav .container .logo {
     width: 12%;
   }
+  /* ------------------------------About--------------------- */
+  #About .container .part1 .frame {
+    width: 50%;
+  }
+  #About .container .part2 .info .text {
+    width: 50%;
+  }
+  #About .container .part2 .info .text p,
+  #About .container .part2 .info .text h5 {
+    font-size: 15px;
+  }
+  /* -----------------------------Services--------------------- */
+  #Services .container .card {
+    width: 50%;
+  }
+  #Services .container .card .item {
+    width: 95%;
+  }
+  /* --------------------------Portfolio--------------------- */
+  #Portfolio .container .card {
+    width: 50%;
+  }
+  #Portfolio .container .card .item .content a {
+    font-size: 15px;
+  }
+  /* --------------------------Blog--------------------- */
+  #Blog .container .card {
+    width: 50%;
+  }
+  #Blog .container > :last-child {
+    margin: unset;
+  }
+
+  #Blog .container .card .item {
+    width: 95%;
+  }
+    /* --------------------------Contact Us--------------------- */
+#Contact_Us .container form{
+  width: 50%;
+}
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
+  /* -------------------------------nav bar--------------------- */
   nav .container .logo {
     width: 10%;
   }
+  /* ------------------------------About--------------------- */
+  #About .container .part1,
+  #About .container .part2 {
+    width: 45%;
+    margin-inline: auto;
+  }
+  #About .container .part2 p {
+    line-height: 1.2;
+  }
+
+  #About .container .part1 .frame {
+    width: 90%;
+  }
+  #About .container .part2 .info .text p,
+  #About .container .part2 .info .text h5 {
+    font-size: 10px;
+  }
+  /* -----------------------------Services--------------------- */
+  #Services .container .card {
+    width: 50%;
+  }
+  #Services .container .card .item {
+    width: 75%;
+  }
+  /* --------------------------Portfolio--------------------- */
+  #Portfolio .container .card {
+    width: 40%;
+  }
+  /* --------------------------Blog--------------------- */
+  #Blog .container .card .item {
+    width: 80%;
+  }
+    /* --------------------------Contact Us--------------------- */
+#Contact_Us .container form{
+  width: 70%;
+}
+#Contact_Us .container form .box{
+  margin-bottom: 0;
+}
+#Contact_Us .container form .box > * {
+  width: 50%;
+}
+#Contact_Us .container form .box .name input {
+  width: 95%;
+  
+}
+
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
+  /* -------------------------------nav bar--------------------- */
   nav .container .logo {
     width: 8%;
   }
@@ -79,7 +249,45 @@
     left: 50%;
     transform: translatex(-50%);
   }
+  /* ------------------------------About--------------------- */
+  #About .container .part2 .info .text p,
+  #About .container .part2 .info .text h5 {
+    font-size: 15px;
+  }
+  #About .container .part2 p {
+    line-height: 1.7;
+  }
+  #About .container .part1 .frame {
+    width: 70%;
+  }
+  /* -----------------------------Services--------------------- */
+  #Services .container .card {
+    width: 25%;
+  }
+  #Services .container .card .item {
+    width: 95%;
+  }
+  /* --------------------------Portfolio--------------------- */
+  #Portfolio .container .card {
+    width: calc(100% / 3);
+  }
+  #Portfolio .container .card .item {
+    width: 90%;
+  }
+  /* --------------------------Blog--------------------- */
+  #Blog .container .card {
+    width: calc(100% / 3);
+    margin: 20px auto;
+  }
+  #Blog .container .card .item {
+    width: 95%;
+  }
 }
 
 @media (min-width: 1181px) and (max-width: 1300px) {
+    /* --------------------------Blog--------------------- */
+
+  #Blog .container .card .item {
+    width: 75%;
+  }
 }

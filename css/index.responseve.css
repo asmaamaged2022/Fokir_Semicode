@@ -54,8 +54,7 @@
   nav .links ul li:not(:last-child) {
     margin-bottom: 20px;
   }
-  nav .icon:focus + .links ul,
-  nav .links:focus-within ul {
+  nav .icon:focus + .links ul {
     height: 260px;
     padding: 20px;
   }
@@ -83,15 +82,15 @@
     width: 100%;
     margin-block: 20px;
   }
- 
+
   /* --------------------------Portfolio--------------------- */
   #Portfolio .container .card {
     width: 100%;
     margin-block: 20px;
   }
-   #Portfolio .container .card .item .content a {
+  #Portfolio .container .card .item .content a {
     font-size: 13px;
-   }
+  }
   /* --------------------------Blog--------------------- */
   #Blog .container .card {
     width: 100%;

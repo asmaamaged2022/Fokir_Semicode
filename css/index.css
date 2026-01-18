@@ -372,6 +372,7 @@ header a.shape::after {
   background-color: white;
   padding: 10px;
   border-radius: 10px;
+  width: fit-content;
 }
 #Portfolio .container .card .item:hover .content a {
   transition-duration: 1s;

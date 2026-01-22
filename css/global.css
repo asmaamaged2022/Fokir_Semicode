@@ -17,6 +17,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+::selection{
+  color: #000;
+  background-color: var(--mainColor);
+}
 html {
   scroll-behavior: smooth;
 }

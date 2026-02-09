@@ -429,7 +429,7 @@ header a.shape::after {
   font-size: 15px;
 }
 #Blog .container .card .item .content h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 #Blog .container .card .item .content p {
   line-height: 1.5;
@@ -514,7 +514,6 @@ header a.shape::after {
 footer {
   width: 100%;
   background-color: #333333;
-  height: 40px;
   padding: 10px;
   text-align: center;
 }
